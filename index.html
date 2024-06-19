@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+  <title>Frontend Mentor | Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="continer">
+    <h2>Contact Us</h2>
+    <div class="first-section">
+      <div class="name">
+        <label for="First-Name"> First Name</label> <span> .</span>
+        <input type="text" id="First-Name" class="same"/>
+      </div>
+      <div class="last-name">
+        <label for="last-Name"> Last Name</label> <span>.</span>
+        <input type="text" id="last-Name2" class="same"/>
+      </div>
+    </div>
+    <div class="second-section">
+      <label for="email">Email Address</label><span> .</span><br>
+      <input type="text" id="email" class="same"/>
+    </div>
+    <div class="third-section">
+      <div>
+        <label for="query">Query Type</label><span>.</span>
+      </div>
+      <div class="inside">
+          <div class="query1">
+            <input type="radio" id="unique1" name="Query" class="radio"/>
+            <p>General Enquiry</p><br/>
+          </div>
+          <div class="query2">
+            <input type="radio" id="unique" name="Query" class="radio"/>
+            <p>Support Request</p><br/>
+          </div>
+      </div>
+    </div>
+    <div class="fouth-section">
+      <label for="Message">Message</label> <span>.</span>
+      <textarea id="Message" class="same"></textarea>
+    </div>
+    <div class="ch-all">
+      <div class="check-paragraph">
+        <input type="checkbox"  id="checkbox" />
+      <p>I consent to being contacted by the team</p>
+      <span>.</span>
+      </div>
+    </div>
+    <div class="submit">
+        <button id="butt">Submit</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+</html>

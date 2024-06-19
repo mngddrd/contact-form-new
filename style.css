@@ -1,0 +1,299 @@
+:root{
+  --Light-Green:rgb(223, 241, 231);
+  --Green:rgb(12, 125, 105);
+  --dark-Green: rgb(14, 89, 77)
+  --red: rgb(217, 69, 69);
+  --White:rgb(255, 255, 255);
+  --Medium-Grey:rgb(135, 163, 166);
+  --Dark-Grey:rgb(43, 66, 70);
+  --mobile:375px;
+  --desktop:1440px;
+  --font-size:16px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--Light-Green);
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--Dark-Grey);
+}
+
+.continer{
+  background-color: var(--White);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  margin-top: 80px;
+  width:500px;
+  border-radius:5px ;
+}
+
+.first-section{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.second-section{
+  display: block;
+  margin-bottom: 15px;
+}
+.second-section input,
+textarea, button{
+  width: 455px;
+}
+
+.third-section {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.query1{
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  width: 225px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.query2{
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  width: 225px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+#unique1{
+  width: 20px;
+  margin: 0 10px 0 10px;
+}
+#unique1:checked ~.query2{
+  background-color: var(--Light-Green);
+}
+#unique{
+  width: 20px;
+  margin: 0 10px 0 10px;
+}
+#unique:checked ~.query1{
+  background-color: var(--Light-Green);
+}
+.check-paragraph{
+  display: flex;
+  gap: 5px;
+  
+}
+
+.check-paragraph input{
+  margin-right: 10px;
+}
+
+h2{
+  margin-bottom: 15px;
+  font-weight: 3rem;
+  font-size: 1.5rem;
+}
+
+.first-section input{
+  width: 222px;
+  
+}
+
+.first-section #First-Name{
+  margin-right: 5px;
+}
+
+.inside{
+  display: flex;
+  justify-content:space-between;
+  gap: 5px;
+}
+
+.inside input{
+  width: 206px;
+}
+
+.first-section input,
+.inside input,.third-section input,
+.second-section input,button{
+  height: 40px;
+
+}
+
+button{
+  background-color: var(--Green);
+  border: none;
+  color: var(--White);
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+button:hover{
+  background-color: rgb(14, 89, 77);
+}
+
+
+
+input
+,textarea{
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 0.5px solid ;
+}
+
+.fouth-section{
+  margin-top: 10px;
+}
+
+#checkbox{
+  margin-top: 0;
+}
+
+.check-paragraph{
+  margin: 30px 0 0 0;
+}
+.ch-al{
+  
+  margin-bottom: 15px;
+}
+
+
+textarea{
+  height: 70px;
+}
+
+H4{
+  font-size: 13px;
+  color: var(--Green);
+  display:inline;
+  
+}
+input, textarea{
+  padding: 10px;
+  font-family:"Karla", sans-serif; ;
+}
+
+input, textarea:hover{
+  border: 0.1px solid var(--Green);
+  cursor: pointer;
+}
+
+.same:focus,
+.same:active{
+  outline: 0.1px solid var(--Green);
+  cursor: pointer;
+}
+
+input[type='radio'], input[type="checkbox"]{
+  accent-color: var(--Green);
+}
+
+
+input[type='radio']:checked:after{
+  background-color: var(--Green);
+  border: 2px solid var(--Green);
+}
+
+.p1{
+  color: red;
+  margin-top: 5px;
+}
+
+.p2{
+  color: red;
+  margin-top: 5px;
+}
+
+.p3{
+  color: red;
+  margin-top: 5px;
+}
+
+.p4{
+  color: red;
+  margin-top: 5px;
+}
+
+@media (max-width:524px){
+  .continer{
+    margin: 10px;
+    width: 92%;
+  }
+  .first-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #First-Name{
+    width: 100%;
+  }
+  #last-Name2{
+    width: 100%;
+  }
+  .last-Name{
+    margin-top: 5px;
+  }
+  .name{
+    margin-bottom:15px ;
+  }
+
+  .third-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .third-section H4{
+    display: inline;
+  }
+  .third-section label{
+    display: inline;
+  }
+
+  .second-section{
+    width: 100%;
+  }
+  #email{
+    width: 100%;
+  }
+  .same{
+    width: 100%;
+    height: 300px;
+  }
+  .inside{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .query1{
+    width: 100%;
+  }
+
+  .query2{
+    width: 100%;
+  }
+
+  .submit{
+    width: 100%;
+  }
+
+  button{
+    width: 100%;
+  }
+
+  .fouth-section{
+    width: 100%;
+  }
+}
